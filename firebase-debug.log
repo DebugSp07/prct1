@@ -1,0 +1,43 @@
+[debug] [2022-06-26T23:15:53.227Z] ----------------------------------------------------------------------
+[debug] [2022-06-26T23:15:53.229Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Sudeep kumar panda\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2022-06-26T23:15:53.230Z] CLI Version:   11.1.0
+[debug] [2022-06-26T23:15:53.230Z] Platform:      win32
+[debug] [2022-06-26T23:15:53.230Z] Node Version:  v16.15.1
+[debug] [2022-06-26T23:15:53.231Z] Time:          Sun Jun 26 2022 16:15:53 GMT-0700 (Pacific Daylight Time)
+[debug] [2022-06-26T23:15:53.231Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-06-26T23:15:53.315Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-06-26T23:15:53.315Z] > authorizing via signed-in user (sudeeppanda2002@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\Sudeep kumar panda
+
+Before we get started, keep in mind:
+
+  * You are initializing within an existing Firebase project directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2022-06-26T23:16:01.145Z] Using project from CLI flag: webl-c5e9a
+[debug] [2022-06-26T23:16:01.149Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/webl-c5e9a [none]
+[debug] [2022-06-26T23:16:01.936Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/webl-c5e9a 403
+[debug] [2022-06-26T23:16:01.937Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/webl-c5e9a {"error":{"code":403,"message":"The caller does not have permission","status":"PERMISSION_DENIED"}}
+[debug] [2022-06-26T23:16:01.937Z] HTTP Error: 403, The caller does not have permission
+[debug] [2022-06-26T23:16:02.432Z] FirebaseError: HTTP Error: 403, The caller does not have permission
+    at responseToError (C:\Users\Sudeep kumar panda\AppData\Roaming\npm\node_modules\firebase-tools\lib\responseToError.js:49:12)
+    at RetryOperation._fn (C:\Users\Sudeep kumar panda\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:287:77)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+[error] 
+[error] Error: Failed to get Firebase project webl-c5e9a. Please make sure the project exists and your account has permission to access it.
